@@ -1,0 +1,77 @@
+<form [formGroup]="dummyForm" class="form-container" (ngSubmit)="onSubmit()"> 
+  <mat-card>
+      <mat-card-header>
+          <mat-card-title>
+              Dummy User Edit Page
+          </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+          <div class="row">
+              <div>
+                  <mat-form-field>
+                      <mat-label for="name">Name</mat-label>
+                      <input
+                      type="string"
+                      id="name"
+                      matInput
+                      placeholder="name"
+                      formControlName="name"
+                      >
+                  </mat-form-field>
+              </div>
+          </div>
+          <div class="row">
+            <div>
+                <mat-form-field>
+                    <mat-label for="location">Location</mat-label>
+                    <input
+                    type="string"
+                    id="location"
+                    matInput
+                    placeholder="location"
+                    formControlName="location"
+                    >
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+          <div>
+              <mat-form-field>
+                  <mat-label for="bio">Biography</mat-label>
+                  <input
+                  type="string"
+                  id="bio"
+                  matInput
+                  placeholder="bio"
+                  formControlName="bio"
+                  >
+              </mat-form-field>
+          </div>
+      </div>
+      <div class="row">
+        <div>
+            <mat-form-field>
+                <mat-label for="age">Age</mat-label>
+                <input
+                type="string"
+                id="age"
+                matInput
+                placeholder="age"
+                formControlName="age"
+                >
+            </mat-form-field>
+        </div>
+    </div>
+     
+
+
+      </mat-card-content>
+      <mat-card-actions>
+          <button color="primary"
+          type="submit"
+          mat-raised-button>
+              Save Review
+          </button>
+      </mat-card-actions>
+  </mat-card>
+</form>
